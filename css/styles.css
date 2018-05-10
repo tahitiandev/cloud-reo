@@ -1,0 +1,162 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: url(../img/background.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+@media all and (max-width: 1024px)
+{
+	body
+	{
+		background: url(../img/background.jpg);
+		background-size: 150%;
+	}
+}
+footer
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	text-align: center;
+	color: #fff;
+}
+header
+{
+	background: #6E6E6E;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 50px;
+}
+header,
+.login,
+footer
+{
+	opacity: .9;
+}
+.login
+{
+	padding: 40px;
+	background: #6E6E6E;
+}
+.login button
+{
+	margin-top: 20px;
+}
+.login label
+{
+	font-weight: bold;
+}
+.login input,
+.login input:focus
+
+ {
+ 	background: #BDBDBD;
+ 	color: #000;
+ 	transition-duration: 1s;
+ }
+.login input:focus
+{
+	box-shadow: 0 0 10px #08298A;
+}
+
+.monconteneur
+{
+	margin-top: 15px;
+	margin-bottom: 50px;
+	background: url("../img/fond.png");
+}
+.monconteneur h1
+{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+/*PARTIE GANTT*/
+.mypart,
+td,
+.form-gantt,
+.form-divers
+{
+	background: url('../img/blanc.png');
+}
+.mypart1,
+th
+{
+	background: url('../img/vert.png');
+}
+.mypart h3,
+.mypart1 h3,
+td
+{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #000;
+}
+.form-gantt,
+.form-divers
+{
+	padding: 10px;
+}
+/*PARTIE GANTT*/
+/*PARTIE CLOUD*/
+.form-cloud
+{
+	background: url('../img/vert.png');
+}
+.section-cloud
+{
+	background: url('../img/blanc.png');
+	padding: 10px;
+}
+a,
+a:hover{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+.imgupload
+{
+  width: 100px;
+  transition-duration: 1s;
+}
+.imgdivers
+{
+  width: 200px;
+  transition-duration: 1s;
+}
+.imgdiversupload
+{
+  width: 400px;
+  transition-duration: 1s;
+}
+.btn-supprimer
+{
+	border: 1px solid red;
+	background: red;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 3px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition-duration: 1s;
+}
+.btn-supprimer:hover
+{
+	color: #fff;
+	transition-duration: 1s;
+	box-shadow: 0 0 10px #000;
+}
+/*PARTIE CLOUD*/

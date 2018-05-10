@@ -1,0 +1,26 @@
+<h1>Nos idées diverses</h1>
+
+<section class="row">
+	<form action="php/divers.php" method="POST" class="col-md-6 offset-md-3 form-divers" id="form-divers" enctype="multipart/form-data">
+		<div class="form-group">
+			<label>Mon idée</label>
+			<input type="text" name="idee" id="idee" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Description</label>
+			<textarea class="form-control" name="description" id="description"></textarea>
+		</div>
+		<div class="form-group">
+			<label>Insérer une image <i>(non obligatoire)</i></label>
+			<input type="file" name="file" class="form-control">
+		</div>
+		<div class="form-group">
+			<button class="btn btn-default col-md-12" type="submit" id="inserer">Insérer</button>
+		</div>
+	</form>
+</section>
+<section class="row">
+
+	<table id="getDivers" class="table table-bordered" style="margin-top:40px; width: 94%;margin-left: 3%;"></table>
+
+</section>

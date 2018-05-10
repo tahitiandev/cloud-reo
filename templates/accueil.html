@@ -1,0 +1,47 @@
+	<h1>Page d'accueil : vu synthétique</h1>
+	<div class="row">
+		<div class="col-md-6 mypart1">
+			<div>
+		      <h3>FFOM : Les 10 derniers saisies</h3>
+			  <article ng-repeat="ffom in ffoms"><strong>{{ffom.type | uppercase}} : </strong>{{ffom.contenu}} <hr></article>
+			</div>
+		</div><!-- class="col-md-6" -->
+		<div class="col-md-6 mypart">
+			<div>
+		      <h3>GANT : Les 10 dernières tâches à faire</h3>
+			  <article ng-repeat="gantt in gantts">
+			  	<h5 class="text-center">{{gantt.activite}}</h5>
+			  	<p><u>Durée : </u> {{gantt.debut}} à {{gantt.fin}}</p>
+			  	<p><u>Description</u><br>{{gantt.description}}</p>
+			  	<hr>
+			  </article>
+			</div>
+		</div><!-- class="col-md-6" -->
+	</div><!-- class="row" -->
+	<div class="row">
+		<div class="col-md-6 mypart">
+			<div>
+		      <h3>CLOUD : Les 10 derniers fichiers uploadés</h3>
+			  <article ng-repeat="cloud in clouds">
+
+			  	{{cloud.proprietaire}} a  {{cloud.action}} <a href="upload/{{cloud.newname}}">{{cloud.intitule}}</a> 
+			  	<hr>
+			  	
+			  </article>
+			</div>
+		</div><!-- class="col-md-6" -->
+		<div class="col-md-6 mypart1">
+			<div>
+				<h3>IDEES : Les 10 derières idées ajoutées</h3>
+			  <article ng-repeat="idee in idees">
+
+			  	{{idee.proprietaire}} à une idée : {{idee.idee}}</a>
+
+			  	<hr>
+			  	
+			  </article>
+			</div>
+		</div><!-- class="col-md-6" -->
+	</div><!-- class="row" -->
+
+</section>

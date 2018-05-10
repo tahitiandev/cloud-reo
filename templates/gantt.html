@@ -1,0 +1,33 @@
+<h1>Plannificateur de tâche</h1>
+
+<section class="row">
+	<form class="col-md-6 offset-md-3 form-gantt" id="form-gantt">
+		<div class="form-group">
+			<label>Activité</label>
+			<input type="text" name="activite" id="activite" class="form-control">
+		</div>
+		<div class="row">
+		<div class="form-group" style="width: 45%; margin-left: 4%;">
+			<label>Début</label>
+			<input type="date" name="debut" id="debut" class="form-control">
+		</div>
+		<div class="form-group" style="width: 45%; margin-left: 1%;">
+			<label>Fin</label>
+			<input type="date" name="fin" id="fin" class="form-control">
+		</div>
+		</div>
+		<div class="form-group">
+			<label>Description</label>
+			<textarea class="form-control" name="description" id="description"></textarea>
+		</div>
+		<div class="form-group">
+			<button class="btn btn-default col-md-12" type="submit" id="inserer">Insérer</button>
+		</div>
+
+	</form>
+</section>
+<section class="row">
+
+	<table id="getGantt" class="table table-bordered" style="margin-top:40px; width: 94%;margin-left: 3%;"></table>
+
+</section>
